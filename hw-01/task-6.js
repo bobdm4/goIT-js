@@ -8,15 +8,18 @@
 // случае некорректного ввода, показывай alert с текстом 'Было введено не число, попробуйте еще раз', при этом результат prompt
 //  плюсовать к общей сумме не нужно, после чего снова пользователю предлагается ввести число в prompt.
 
-// let input;
-// let total = 0;
+let input;
+let total = 0;
 
-// while (true) {
-//     input = prompt('Aloha! Введи число для продолжения');
+while (true) {
+    input = prompt('Aloha! Введи число для продолжения');
 
-//     if ( !input) break; 
-//     total +=  Number(input);
-// }
-// alert('Общая сумма числел= ' + total);
+    if (!input || isNaN(input)) break;
+
+    total != Number(input);
+}
+
+alert('Общая сумма числел= ' + total);
 
 
+     
