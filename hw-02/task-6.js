@@ -9,10 +9,9 @@
 function checkForSpam(str) {
     let check = str.toLowerCase();
     if (check.includes('spam') || check.includes('sale')) {
-        check = true;
+        check = true;   
     } else
     check = false;
-    
     return check
 }
 

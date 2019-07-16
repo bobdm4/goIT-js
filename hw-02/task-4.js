@@ -11,7 +11,6 @@
 function findLongestWord(message){
     const word = message.split(' ');
     let longestWord = word[0];
-
     for (const element of word) {
         if (element.length > longestWord.length) {
             longestWord = element;
