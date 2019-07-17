@@ -3,9 +3,10 @@
 
 // Вызовы функции для проверки работоспособности твоей реализации.
 function countProps(props) {
-    console.log(Object.values(props).length);
+    const a = Object.values(props).length;
+    return a;
 }
 
 countProps({}); //
 countProps({ name: 'Mango', age: 2 }); // 2
-countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }); // 3
+countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }); // 3                                                                         

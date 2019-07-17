@@ -10,10 +10,8 @@ function findBestEmployer(employees) {
             name = key;
         }
     }
-    return {
-        name,
-        tasksCompleted: max,
-    }
+    return name
+    
 }
 
 console.log(
