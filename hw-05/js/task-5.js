@@ -1,7 +1,6 @@
 class Car {
 
     static getSpecs(mustang) {
-        // return `${this._maxSpeed}, ${this._speed}, ${this._isOn}, ${this._distance}, ${this._price}`;
         console.log('mustang :', mustang);
     }
 
