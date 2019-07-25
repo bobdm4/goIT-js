@@ -68,7 +68,7 @@ function compareAnswer(trueAnswers, userAnswers) {
     }
 
     if (counter > 4) {
-        return resultAlert.textContent = `Success!!! Your result >80%}`
+        return resultAlert.textContent = `Success!!! Your result >80%`
     }
     resultAlert.textContent = `Fail!!! Try again...`
 }
