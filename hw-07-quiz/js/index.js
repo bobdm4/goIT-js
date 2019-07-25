@@ -37,7 +37,6 @@ function createTest(quiz) {
 createTest(quiz);
 
 const trueAnswers = quiz.questions.map(el => { return el.answer });
-console.log('trueAnswer :', trueAnswers);
 
 buttonSbm.addEventListener('click', checkedTest);
 function checkedTest(e) {
@@ -47,10 +46,7 @@ function checkedTest(e) {
     [...checkedInputArr].map(el => {
         userAnswers.push(+el.value)
     })
-
-    console.log('userAnswers :', userAnswers);
     compareAnswer(trueAnswers, userAnswers);
-
 };
 
 function compareAnswer(trueAnswers, userAnswers) {
@@ -62,7 +58,6 @@ function compareAnswer(trueAnswers, userAnswers) {
         }
         index += 1;
     }
-
     if (counter > 4) {
         return resultAlert.textContent = `Success!!! Your result >80%`
     }
