@@ -40,8 +40,6 @@ const trueAnswers = quiz.questions.map(el => { return el.answer });
 console.log('trueAnswer :', trueAnswers);
 
 buttonSbm.addEventListener('click', checkedTest);
-// resultAlert.addEventListener('click', toggleModal)
-
 function checkedTest(e) {
     e.preventDefault();
     let userAnswers = [];
@@ -54,8 +52,6 @@ function checkedTest(e) {
     compareAnswer(trueAnswers, userAnswers);
 
 };
-
-
 
 function compareAnswer(trueAnswers, userAnswers) {
     let counter = 0;
@@ -74,10 +70,3 @@ function compareAnswer(trueAnswers, userAnswers) {
 }
 
 
-buttonSbm.onclick = function () {
-    resultAlert.style.display = "block";
-}
-
-resultAlert.onclick = function () {
-    resultAlert.style.display = "none";
-}
