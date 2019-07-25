@@ -24,7 +24,7 @@ function createTest(quiz) {
             let radio = document.createElement('input');
             radio.setAttribute('type', 'radio');
             radio.setAttribute('name', 'answer' + (indexQuestion + 1));
-            radio.setAttribute('value', '' + (index + 1));
+            radio.setAttribute('value', '' + (index));
             label.prepend(radio);
             li.append(label);
             ul.append(li);
