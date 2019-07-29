@@ -1,7 +1,7 @@
 import itemImg from './gallery-items.js';
 
 const gallery = document.querySelector('.gallery')
-const lightbox = document.querySelector('.lightbox');
+const lightbox = document.querySelector('.lightbox');   
 const modalImg = document.querySelector('.lightbox___image');
 
 
@@ -33,8 +33,8 @@ function createGallery(itemImg) {
 createGallery(itemImg);
 
 gallery.addEventListener('click', openModal);
-lightbox.addEventListener('click', notImg, closeKey)
-// lightbox.addEventListener('click', closeKey)
+lightbox.addEventListener('click', notImg)
+
 
 function openModal(e) {
     e.preventDefault()
