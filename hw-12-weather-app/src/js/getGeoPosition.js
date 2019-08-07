@@ -1,6 +1,6 @@
 import PNotify from 'pnotify/dist/es/PNotify';
 const box = document.querySelector('#weather');
-const baseUrl = 'http://api.apixu.com/v1';
+const baseUrl = 'https://api.apixu.com/v1';
 const resource = '/current.json';
 const regKey = '?key=fd99f0f33339427587270934190508&q=';
 

@@ -1,6 +1,6 @@
 const form = document.querySelector('.search-form');
 const inputCity = document.querySelector('input')
-const baseUrl = 'http://api.apixu.com/v1';
+const baseUrl = 'https://api.apixu.com/v1';
 const resource = '/current.json';
 const regKey = '?key=fd99f0f33339427587270934190508&q=';
 const box = document.querySelector('#weather');
