@@ -14,7 +14,6 @@ function userChoice(e) {
   fetch(baseUrl + resource + regKey + city )
     .then(response => response.json())
     .then(weather => {
-      console.log(weather);
       document.querySelector('span[data-field="location"]').textContent = weather.location.name;
       document.querySelector('span[data-field="temp"]').textContent = weather.current.feelslike_c + ' ℃';
       document.querySelector('span[data-field="humidity"]').textContent = weather.current.humidity + '%';
